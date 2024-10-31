@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coyote New Tab</title>
+    <link rel="stylesheet" type="text/css" href="../css/new_tab.css">
+</head>
+<body>
+    <div class="container">
+        <img style="float: left;" alt="Coyote says 1. Why do you search? 2. Give me your words. 3. Search." src="../images/coyote_container_image1.png">
+        <header>
+            <!--<h1>Welcome to Coyote</h1>
+            <p>Define the purpose of your search and start exploring.</p>-->
+        </header>
+        
+        <div style="clear:both;"></div>
+        <section class="search-setup">
+            <div class="purpose-of-search">
+                <label for="purposeInput">Purpose of search:</label>
+                <input type="text" id="purposeInput" placeholder="Enter the purpose of your search">
+                
+                <div class="recent-purposes">
+                    <h2>Recent Purposes:</h2>
+                    <ul id="recentPurposesList">
+                        <!-- Recent purposes will be populated here by the script -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="search-terms">
+                <label for="searchTermsInput">Search Terms:</label>
+                <input type="text" id="searchTermsInput" placeholder="Enter your search terms">
+            </div>
+            
+            <button id="searchButton" disabled>Search</button>
+        </section>
+    </div>
+
+    <script src="../js/new_tab.js"></script>
+</body>
+</html>
